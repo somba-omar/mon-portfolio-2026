@@ -1,0 +1,122 @@
+:root{
+    --violet_doux:#6c63FF;
+    --viole_fonce:#534EDD;
+    --orange_vif:#FFA726;
+    --gris_fonce:#666;
+    --gris_trés_clai:#F8F8F8;
+    --gris_clair:#EEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--gris_trés_clai);
+    font-family: Roboto;
+    line-height: 1.6;
+}
+header{
+    background-color: white;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.05) ;
+    position:sticky ;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--violet_doux);
+}
+
+ul li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--gris_fonce);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    color: var(--violet_doux);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--violet_doux);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+a.active {
+    color: var(--violet_doux);
+}
+
+a.active::after {
+    width: 100%;
+}
+section.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin-top: 10rem 2rem;
+
+}
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 250px; 
+    border: 8px solid var (--violet_doux);
+}
+.hero h1{
+    color: var(--violet_doux);
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+
+}
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet_doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero a:hover{
+    background-color: var(--viole_fonce);
+    transform: translate(-3px);
+}
