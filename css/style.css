@@ -120,3 +120,34 @@ section.hero{
     background-color: var(--viole_fonce);
     transform: translate(-3px);
 }
+.apropos{
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+section h2{
+    color: var(--violet_doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    
+
+}
+section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet_doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris_fonce);
+    font-size: 1.3rem;
+
+}
+
