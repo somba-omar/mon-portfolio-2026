@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Divertissements - Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Mon Portfolio</title>
 </head>
-
-<body>  
+<body>
 
 <header>
     <div>
-        <a href="">Mon Portfolio</a>
+        <a href="index.html">Mon Portfolio</a>
     </div>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projet.html">Projets</a></li>
-            <li><a href="passion.html">Passions</a></li>
-            <li><a href="divertissement.html" class="active">Divertissements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="passion.html">Passions</a></li>
+        <li><a href="divertissement.html" class="active">Divertissements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </header>
 
-<h1>Voici mon divertissement</h1>
+<main>
+    <section class="apropos">
+        <h2>Mes Divertissements</h2>
+        <p>En dehors du code et de l'informatique, j'aime explorer d'autres univers qui stimulent ma créativité et me permettent de me détendre.</p>
+    </section>
+
+    <section class="divertissement-grid">
+        <div class="card">
+            <i class="fas fa-gamepad"></i>
+            <h3>Gaming</h3>
+            <p>Passionné par les jeux de stratégie et les RPG. Cela m'aide à développer ma logique et ma résolution de problèmes.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-film"></i>
+            <h3>Cinéma & Séries</h3>
+            <p>Grand amateur de science-fiction et de documentaires technologiques. "Mr. Robot" et "Silicon Valley" sont mes classiques.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-headphones"></i>
+            <h3>Musique</h3>
+            <p>J'écoute beaucoup de Lo-fi et de musique instrumentale pendant que je programme pour rester concentré.</p>
+        </div>
+    </section>
+
+    <section class="hero" style="margin-top: 4rem; padding-bottom: 5rem;">
+        <div>
+            <h3>Un petit défi ?</h3>
+            <p>On dit souvent que les développeurs sont de bons joueurs. Et vous ?</p>
+            <a href="#">Lancer un mini-jeu</a>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>&copy;2026 Vlad.Tout droits réservé.</p>
-    <div class="icons">
-        <a href=""><i class="fab-band fa-github"></i></a>
-        <a href=""><i class="fab-band fa-linkedin"></i></a>
-        <a href=""><i class="fab-band fa-square-x-twiter"></i></a>
+    <p>&copy;2026 omar omar. tout droit reservé</p>
+    <div>
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
     </div>
 </footer>
 

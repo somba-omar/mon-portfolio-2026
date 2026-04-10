@@ -208,3 +208,484 @@ footer a:hover{
     transform: translateY(-3px);
 }
 
+/* Styles spécifiques pour la page Divertissement */
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto 5rem auto;
+}
+
+.divertissement-grid .card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.divertissement-grid .card:hover {
+    transform: translateY(-10px);
+}
+
+.divertissement-grid .card i {
+    font-size: 3rem;
+    color: var(--violet_doux);
+    margin-bottom: 1.5rem;
+}
+
+.divertissement-grid .card h3 {
+    color: var(--viole_fonce);
+    margin-bottom: 1rem;
+}
+
+.divertissement-grid .card p {
+    color: var(--gris_fonce);
+    font-size: 0.95rem;
+}
+/* Styles pour la page Projets */
+.projets-container {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    text-align: center;
+    color: var(--gris_fonce);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.projet-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+}
+
+.projet-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--gris_clair); /* Couleur de secours */
+}
+
+.projet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projet-info {
+    padding: 1.5rem;
+}
+
+.projet-info h3 {
+    color: var(--viole_fonce);
+    margin-bottom: 0.8rem;
+}
+
+.projet-info p {
+    color: var(--gris_fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: var(--gris_trés_clai);
+    color: var(--violet_doux);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.projet-page {
+    width: 100%;
+    margin: 6rem auto;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+.projet-card {
+    background-color: white;
+    border: 1px solid var(--gris_clair);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.projet-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.projet-card .content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Styles spécifiques pour la page Passion */
+.passion-section {
+    width: 85%;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--gris_fonce);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.passion-card {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border-bottom: 4px solid var(--violet_doux); /* Une petite barre de rappel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1; /* On garde ton format carré */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: scale(1.03);
+    background-color: var(--violet_doux);
+}
+
+.passion-card .icon-box {
+    font-size: 3.5rem;
+    color: var(--violet_doux);
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.passion-card h3 {
+    color: var(--viole_fonce);
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+/* Style spécifique pour la page Passion */
+.passion-page {
+    width: 100%;
+    margin: 6rem auto;
+}
+
+/* Grille de 8 projets (4x2 sur ordinateur) */
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+/* Le "Carré" de la passion (identique au projet) */
+.passion-card {
+    background-color: white;
+    border: 1px solid var(--gris_clair);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1; /* Format carré parfait */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--violet_doux);
+}
+
+/* L'image dans le carré (60% de la hauteur) */
+.passion-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--gris_trés_clai);
+}
+
+/* Les explications dans le carré (40% de la hauteur) */
+.passion-card .content {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.passion-card h3 {
+    color: var(--violet_doux);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.passion-card p {
+    color: var(--gris_fonce);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.contact-content {
+    display: flex;
+    gap: 4rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: var(--violet_doux);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: var(--gris_fonce);
+    font-size: 1.1rem;
+}
+
+.social-apps {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gris_clair);
+}
+
+.apps-links a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: var(--gris_trés_clai);
+    color: var(--violet_doux);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.apps-links a:hover {
+    background-color: var(--violet_doux);
+    color: white;
+}
+
+/* Styles du Formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--gris_fonce);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--gris_clair);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--violet_doux);
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: var(--violet_doux);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: var(--viole_fonce);
+}
+
+/* Adaptabilité Mobile */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+.contact-info p i {
+    color: var(--violet_doux);
+    width: 25px; /* Pour que les icônes soient bien alignées verticalement */
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+/* ---
+
+.contact-page {
+    padding: 4rem 2rem;
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--gris_fonce);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* Coté Infos *
+.contact-info-side {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info-side h3 {
+    color: var(--viole_fonce);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--gris_fonce);
+}
+
+.contact-details i {
+    color: var(--violet_doux);
+    margin-right: 10px;
+}
+
+/* Coté Formulaire *
+.mon-formulaire {
+    flex: 1.2;
+    min-width: 320px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--viole_fonce);
+}
+
+.mon-formulaire input, 
+.mon-formulaire textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--gris_clair);
+    border-radius: 10px;
+    background-color: var(--gris_trés_clai);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.mon-formulaire input:focus, 
+.mon-formulaire textarea:focus {
+    border-color: var(--violet_doux);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet_doux);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--viole_fonce);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(83, 78, 221, 0.3);
+}
+
+/* Responsive pour mobile *
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .contact-info-side {
+        text-align: center;
+    }
+}
+*/
